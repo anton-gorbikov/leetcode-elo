@@ -8,7 +8,7 @@ fetch("https://zerotrac.github.io/leetcode_problem_rating/data.json")
     });
 
     setInterval(() => {
-      if (location.href.includes("problemset/all")) {
+      if (location.href.includes("problemset")) {
         const list = Array.from(document.querySelectorAll('[role="row"]'));
         const header = list.shift();
 
@@ -24,6 +24,9 @@ fetch("https://zerotrac.github.io/leetcode_problem_rating/data.json")
           if (rating) {
             Array.from(element.querySelectorAll(".mx-2")).at(-1).innerHTML =
               Math.round(rating);
+          } else {
+            Array.from(element.querySelectorAll(".mx-2")).at(-1).innerHTML =
+              "N/A";
           }
         });
       }
