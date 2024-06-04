@@ -7,7 +7,7 @@
 
   "content_scripts": [
     {
-		"matches": ["*://*.leetcode.com/*"],
+      "matches": ["*://*.leetcode.com/*"],
       "js": ["index.js"]
     }
   ]
