@@ -5,6 +5,12 @@
 
   "description": "Replaces Frequency with Elo Rating on LeetCode",
 
+  "permissions": [
+    "*://zerotrac.github.io/*",
+    "activeTab",
+    "webRequest"
+  ],
+
   "content_scripts": [
     {
       "matches": ["*://*.leetcode.com/*"],
