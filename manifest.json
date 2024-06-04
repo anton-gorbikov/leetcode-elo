@@ -1,0 +1,14 @@
+{
+  "manifest_version": 2,
+  "name": "LeetCodeElo",
+  "version": "1.0",
+
+  "description": "Replaces Frequency with Elo Rating on LeetCode",
+
+  "content_scripts": [
+    {
+      "matches": ["*://leetcode.com/*"],
+      "js": ["index.js"]
+    }
+  ]
+}
